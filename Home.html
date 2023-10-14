@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <title>Culinaria</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-black navbar-dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Novidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 rounded-0"
+              type="search"
+              placeholder="Digite o curso"
+              aria-label="Pesquisar"
+            />
+            <button class="btn btn-outline-light rounded-0" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="w-100 img-fluid d-md-none"
+            src="assets/Desktop/pexels-marta-dzedyshko-2067436.jpg"
+            alt="Bolo."
+          />
+          <img
+            class="w-100 img-fluid d-none d-md-block d-xl-none"
+            src="assets/Desktop/pexels-marta-dzedyshko-2067436.jpg"
+            alt="Bolo."
+          />
+          <img
+            class="w-100 img-fluid d-none d-xl-block banner-comida"
+            src="assets/Desktop/pexels-marta-dzedyshko-2067436.jpg"
+            alt="Bolo."
+          />
+        </div>
+        <div class="carousel-item position-relative">
+          <img
+            class="w-100 img-fluid d-md-none"
+            src="assets/Desktop/pexels-oswald-yaw-elsaboath-9975765.jpg"
+            alt="Hamburguer com batata frita."
+          />
+          <img
+            class="w-100 img-fluid d-none d-md-block d-xl-none"
+            src="assets/Desktop/pexels-oswald-yaw-elsaboath-9975765.jpg"
+            alt="Hamburguer com batata frita."
+          />
+          <img
+            class="w-100 img-fluid d-none d-xl-block"
+            src="assets/Desktop/pexels-oswald-yaw-elsaboath-9975765.jpg"
+            alt="Hamburguer com batata frita."
+          />
+        </div>
+        <div class="carousel-item position-relative">
+          <img
+            class="w-100 img-fluid d-md-none"
+            src="assets/Desktop/pexels-nadin-sh-18618317.jpg"
+            alt="Prato de comida."
+          />
+          <img
+            class="w-100 img-fluid d-none d-md-block d-xl-none"
+            src="assets/Desktop/pexels-nadin-sh-18618317.jpg"
+            alt="Prato de comida."
+          />
+          <img
+            class="w-100 img-fluid d-none d-xl-block"
+            src="assets/Desktop/pexels-nadin-sh-18618317.jpg"
+            alt="Prato de comida."
+          />
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Proximo</span>
+      </button>
+    </div>
+
+    <h2 class="container text-center my-3 my-xl-5">Lista de Cursos!</h2>
+
+    <div class="container row mx-auto">
+      <div class="col-12 col-md-6 col-xxl-4 pb-4">
+        <div class="card">
+          <img
+            class="d-block d-md-none"
+            src="assets/Desktop/pexels-polina-tankilevitch-4109998.jpg"
+            alt="Torta Holandesa."
+          />
+          <img
+            class="d-none d-md-block d-xl-none"
+            src="assets/Desktop/pexels-polina-tankilevitch-4109998.jpg"
+            alt="Torta Holandesa."
+          />
+          <img
+            class="d-none d-xl-block"
+            src="assets/Desktop/pexels-polina-tankilevitch-4109998.jpg"
+            alt="Torta Holandesa."
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Torta Holandesa</h5>
+            <p class="card-text">Curso de como fazer uma Torta Holandesa.</p>
+            <p class="fw-bold">R$30,00</p>
+            <a href="#" class="btn btn-primary rounded-0 border-0">Ver mais</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xxl-4 pb-4">
+        <div class="card">
+          <img
+            class="d-block d-md-none"
+            src="assets/Desktop/pexels-natan-machado-fotografia-gastronômica-15010292.jpg"
+            alt="Hamburguer."
+          />
+          <img
+            class="d-none d-md-block d-xl-none"
+            src="assets/Desktop/pexels-natan-machado-fotografia-gastronômica-15010292.jpg"
+            alt="Hamburguer."
+          />
+          <img
+            class="d-none d-xl-block"
+            src="assets/Desktop/pexels-natan-machado-fotografia-gastronômica-15010292.jpg"
+            alt="Hamburguer."
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Hamburguer</h5>
+            <p class="card-text">Curso de como fazer um Hamburguer Cheddar</p>
+            <p class="fw-bold">R$30,00</p>
+            <a href="#" class="btn btn-primary rounded-0 border-0">Ver mais</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xxl-4 pb-4">
+        <div class="card">
+          <img
+            class="d-block d-md-none"
+            src="assets/Desktop/pexels-jonathan-borba-2878737.jpg"
+            alt="Panetone."
+          />
+          <img
+            class="d-none d-md-block d-xl-none"
+            src="assets/Desktop/pexels-jonathan-borba-2878737.jpg"
+            alt="Panetone."
+          />
+          <img
+            class="d-none d-xl-block"
+            src="assets/Desktop/pexels-jonathan-borba-2878737.jpg"
+            alt="Panetone."
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Panetone de Chocolate</h5>
+            <p class="card-text">
+              Curso de como fazer um Panetone de chocolate.
+            </p>
+            <p class="fw-bold">R$40,00</p>
+            <a href="#" class="btn btn-primary rounded-0 border-0">Ver mais</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xxl-4 pb-4">
+        <div class="card h-100">
+          <img
+            class="h-100 d-block d-md-none"
+            src="assets/Desktop/pexels-the-castlebar-5893501 (1).jpg"
+            alt="Frango Grelhado."
+          />
+          <img
+            class="h-100 d-none d-md-block d-xl-none"
+            src="assets/Desktop/pexels-the-castlebar-5893501 (1).jpg"
+            alt="Frango Grelhado."
+          />
+          <img
+            class="h-100 d-none d-xl-block"
+            src="assets/Desktop/pexels-the-castlebar-5893501 (1).jpg"
+            alt="Frango Grelhado."
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Frango Grelhado</h5>
+            <p class="card-text">Curso de como fazer um Frango Grelhado</p>
+            <p class="fw-bold">R$20,00</p>
+            <a href="#" class="btn btn-primary rounded-0 border-0">Ver mais</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xxl-4 pb-4">
+        <div class="card">
+          <img
+            class="d-block d-md-none"
+            src="assets/Desktop/pexels-cree-payton-9617397.jpg"
+            alt="Macarrão com almondega."
+          />
+          <img
+            class="d-none d-md-block d-xl-none"
+            src="assets/Desktop/pexels-cree-payton-9617397.jpg"
+            alt="Macarrão com almondega."
+          />
+          <img
+            class="d-none d-xl-block"
+            src="assets/Desktop/pexels-cree-payton-9617397.jpg"
+            alt="Macarrão com almondega."
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Macarrão com almondega</h5>
+            <p class="card-text">
+              Curso de como fazer um Macarrão com almondega
+            </p>
+            <p class="fw-bold">R$15,00</p>
+            <a href="#" class="btn btn-primary rounded-0 border-0">Ver mais</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xxl-4 pb-4">
+        <div class="card">
+          <img
+            class="d-block d-md-none"
+            src="assets/Desktop/pexels-vui-nguyen-18563182.jpg"
+            alt="Biffe."
+          />
+          <img
+            class="d-none d-md-block d-xl-none"
+            src="assets/Desktop/pexels-vui-nguyen-18563182.jpg"
+            alt="Biffe."
+          />
+          <img
+            class="d-none d-xl-block"
+            src="assets/Desktop/pexels-vui-nguyen-18563182.jpg"
+            alt="Biffe."
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Biffe</h5>
+            <p class="card-text">Curso de como fazer um Biffe com salada</p>
+            <p class="fw-bold">R$15,00</p>
+            <a href="#" class="btn btn-primary rounded-0 border-0">Ver mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center bg-black text-bg-dark">
+      <p class="card-text py-3">
+        2023 <i class="bi bi-c-circle"></i> Projeto fictício sem fins
+        comerciais.
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

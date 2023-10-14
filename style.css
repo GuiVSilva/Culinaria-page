@@ -1,0 +1,24 @@
+:root {
+  --linear-botes: linear-gradient(50deg, #dcdada 0%, #ededed 100%);
+  --linear-bot: linear-gradient(100deg, #727171 0%, #b2b2b2 100%);
+}
+
+nav {
+  background: var(--linear-bot);
+}
+
+footer {
+  background: var(--linear-bot);
+}
+
+@media (max-width: 767px) {
+  .posicao {
+    top: 60%;
+  }
+}
+
+@media (max-width: 468px) {
+  .posicao {
+    top: 50%;
+  }
+}
